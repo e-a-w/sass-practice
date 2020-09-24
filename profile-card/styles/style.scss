@@ -3,6 +3,7 @@
 $brown: #786450;
 $light-brown: #ca7c4e;
 $lightest-brown: #eebe6c;
+$pale: #f5e8df;
 
 @mixin flexCenter($direction) {
   display: flex;
@@ -43,16 +44,59 @@ body {
 #card-left {
   @include flexCenter(column);
   @include fullHeightWidth();
+  padding: 20px auto;
 }
 
 #avatar {
-  height: 100px;
-  width: 100px;
-  border: 1px solid $brown;
+  margin-top: 20px;
+  height: 120px;
+  width: 120px;
+  border: 3px double $brown;
   border-radius: 100%;
   background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
   background-size: cover;
   background-position: center;
+}
+
+#name-title {
+  padding: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    &:first-of-type {
+      margin-top: -30px;
+      padding-bottom: 5px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+#buttons {
+  @include flexCenter(column);
+  margin-top: -30px;
+  button {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid $brown;
+    border-radius: 5px;
+    background: white;
+    color: $brown;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s;
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+    &:hover {
+      background: $pale;
+      cursor: pointer;
+    }
+  }
 }
 
 #card-right {
@@ -62,7 +106,7 @@ body {
     @include flexCenter(column);
     @include fullHeightWidth();
     padding: 20px;
-    background: #f5e8df;
+    background: $pale;
     transition: all 0.5s;
     &:first-of-type {
       border-top-right-radius: 10px;
