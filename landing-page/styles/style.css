@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 16px;
+}
+
+* p {
+  padding: 5px 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #f5f5f5;
+  color: #5c4b74;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  background: #a083c5;
+  color: white;
+}
+
+nav ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+header {
+  padding-right: 150px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 3px #a083c5;
+  color: #5c4b74;
+}
+
+header h3 {
+  font-size: 2rem;
+  color: #a083c5;
+}
+
+section {
+  margin-top: 30px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  background: white;
+  -webkit-box-shadow: 5px 5px 15px 0px #a083c5;
+          box-shadow: 5px 5px 15px 0px #a083c5;
+}
+
+section h3, section button {
+  margin: 10px 0;
+}
+
+section button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #a083c5;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+section button:first-of-type {
+  background: white;
+  color: #a083c5;
+}
+
+section button:first-of-type:hover {
+  border: 1px solid white;
+  background: #a083c5;
+  color: white;
+}
+
+section button:nth-of-type(2) {
+  background: #a083c5;
+  color: white;
+}
+
+section button:nth-of-type(2):hover {
+  background: white;
+  color: #a083c5;
+}
+/*# sourceMappingURL=style.css.map */
