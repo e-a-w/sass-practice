@@ -1,0 +1,77 @@
+
+@keyframes bounce
+    0%
+        left: -1px
+        bottom: -1px
+        border-radius: 10px 50px 10px 0px
+    30%
+        border-radius: 100%
+    100%
+        left: 100%
+        bottom: 100%
+        border-radius: 100%
+
+@mixin centerFlex()
+    display: flex
+    justify-content: center
+    align-items: center
+
+::root
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body
+    height: 100vh
+    width: 100vw
+    background: skyblue
+    @include centerFlex()
+
+#container
+    height: 50vh
+    width: 50vw
+    position: relative
+    background: antiquewhite
+    @include centerFlex()
+
+.smiley
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 150px
+    width: 150px
+    font-family: sans-serif
+    position: absolute
+    animation: 2s ease infinite alternate bounce
+    background: yellow
+    border: 2px solid black
+    box-shadow: 5px 5px 15px 1px rgb(0,0,0)
+
+.eyes
+    margin-bottom: 20%
+    display: flex
+    justify-content: space-around
+    z-index: 10
+
+.eye
+    height: 30px
+    width: 30px
+    background: black
+    border-radius: 100%
+    &:first-child
+        margin-right: 15px
+
+.invisi-smile, .smile
+    bottom: 15px
+    height: 100px
+    width: 100px
+    position: absolute
+    border-radius: 100%
+    background: black
+
+.invisi-smile
+    background: yellow
+    z-index: 5
+    bottom: 18px
