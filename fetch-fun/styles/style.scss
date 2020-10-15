@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap");
+
+$light: rgb(190, 235, 194);
+$medium: rgb(138, 190, 143);
+$dark: rgb(12, 80, 32);
+
+@mixin centerFlex($dir) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include centerFlex(column);
+  height: 100vh;
+  font-family: Commissioner, sans-serif;
+  background: $light;
+  background: linear-gradient(
+    110.1deg,
+    rgba(34, 126, 34, 1) 2.9%,
+    rgba(168, 251, 60, 1) 90.3%
+  );
+}
+
+#container {
+  @include centerFlex(column);
+  padding: 20px;
+  background: $dark;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.356);
+}
+
+.head {
+  @include centerFlex(column);
+  width: 100%;
+  padding: 10px;
+  background: $light;
+  text-align: center;
+  #random {
+    margin-bottom: 25px;
+    height: 40px;
+    background: $medium;
+    cursor: help;
+    font-family: Commissioner, sans-serif;
+  }
+}
+
+.profile-card {
+  @include centerFlex(row);
+  padding: 20px;
+  width: 100%;
+  background: $medium;
+  .avatar {
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    background: white;
+    border: 2px solid $dark;
+  }
+  .user-info {
+    margin-left: 20px;
+    #name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    div {
+      margin-bottom: 15px;
+    }
+  }
+}
