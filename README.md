@@ -9,3 +9,5 @@ A collection of small projects that will use SCSS or SASS for styling.
 - Youtube Mockup: Refactoring of [this project](https://github.com/e-a-w/youtubewhite-mockup) from vanilla CSS to SCSS.
 
 - Animate: Playing with animations! View the current progress [here](https://codepen.io/eaw/pen/eYZwMey)
+
+- Fetch-Fun: Styling a page that fetches a random user profile. View it [here](https://codepen.io/eaw/pen/BazjZMm)
